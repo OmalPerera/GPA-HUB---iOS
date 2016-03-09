@@ -16,7 +16,7 @@
 
 @implementation ViewController
 - (IBAction)loginNext:(id)sender {
-    //NSString *userName = [[self loginName]text];
+    NSString *userName = [[self loginName]text];
     //NSString *userUniversity = [[self loginUniversity]text];
     //NSString *feedbackMgs = [NSString stringWithFormat:@"Hello, %@",userName];
     //[[self loginFeedback] setText:feedbackMgs];
