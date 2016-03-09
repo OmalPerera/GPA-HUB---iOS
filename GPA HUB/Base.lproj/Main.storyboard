@@ -23,23 +23,17 @@
                                 <rect key="frame" x="31" y="244" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <animations/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Next"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="loginNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7el-kn-TzN"/>
                                     <segue destination="7Ow-gb-VXS" kind="push" id="9VL-0O-Lh8"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="M13-W7-dZU">
-                                <rect key="frame" x="32" y="299" width="257" height="21"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" id="BfT-Cy-M3Y">
                                 <rect key="frame" x="31" y="151" width="257" height="30"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -83,9 +77,8 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="bSe-4b-1K9"/>
+                    <navigationItem key="navigationItem" title="Home" id="bSe-4b-1K9" colorLabel="IBBuiltInLabel-Blue"/>
                     <connections>
-                        <outlet property="loginFeedback" destination="M13-W7-dZU" id="dKg-9Y-GFJ"/>
                         <outlet property="loginName" destination="BfT-Cy-M3Y" id="Kzh-Ya-J4F"/>
                         <outlet property="loginUniversity" destination="GFr-XN-PUK" id="wSW-iZ-9sf"/>
                     </connections>
@@ -169,10 +162,12 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o6G-dH-cEd" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="3WT-Fe-xr8">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="3WT-Fe-xr8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <animations/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

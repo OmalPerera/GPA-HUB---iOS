@@ -11,16 +11,15 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *loginName;
 @property (weak, nonatomic) IBOutlet UITextField *loginUniversity;
-@property (weak, nonatomic) IBOutlet UILabel *loginFeedback;
 
 @end
 
 @implementation ViewController
 - (IBAction)loginNext:(id)sender {
-    NSString *userName = [[self loginName]text];
-    NSString *userUniversity = [[self loginUniversity]text];
-    NSString *feedbackMgs = [NSString stringWithFormat:@"Hello, %@",userName];
-    [[self loginFeedback] setText:feedbackMgs];
+    //NSString *userName = [[self loginName]text];
+    //NSString *userUniversity = [[self loginUniversity]text];
+    //NSString *feedbackMgs = [NSString stringWithFormat:@"Hello, %@",userName];
+    //[[self loginFeedback] setText:feedbackMgs];
     
     //dissmisses keyboard when button pressed
     [[self loginName] resignFirstResponder];
@@ -40,6 +39,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
