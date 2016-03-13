@@ -90,7 +90,7 @@
         <!--Result Input-->
         <scene sceneID="7Ck-Tz-cBp">
             <objects>
-                <viewController id="7Ow-gb-VXS" sceneMemberID="viewController">
+                <viewController id="7Ow-gb-VXS" customClass="ResultInputViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LaW-Bq-FXY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,6 +153,15 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iam-PI-VoV">
+                                        <rect key="frame" x="145" y="386" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <animations/>
+                                        <state key="normal" title="+"/>
+                                        <connections>
+                                            <action selector="addNewRow:" destination="7Ow-gb-VXS" eventType="touchUpInside" id="oqk-nI-ja6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <animations/>
                             </scrollView>
