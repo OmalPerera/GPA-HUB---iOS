@@ -15,6 +15,7 @@
 		0A6F45231C858E2D0002E808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F45211C858E2D0002E808 /* LaunchScreen.storyboard */; };
 		0A6F452E1C858E2D0002E808 /* GPA_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F452D1C858E2D0002E808 /* GPA_HUBTests.m */; };
 		0A6F45391C858E2D0002E808 /* GPA_HUBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F45381C858E2D0002E808 /* GPA_HUBUITests.m */; };
+		0ADE66761C9587E700100D79 /* ResultInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE66751C9587E700100D79 /* ResultInputViewController.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		0A6F45341C858E2D0002E808 /* GPA HUBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA HUBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A6F45381C858E2D0002E808 /* GPA_HUBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPA_HUBUITests.m; sourceTree = "<group>"; };
 		0A6F453A1C858E2D0002E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0ADE66741C9587E700100D79 /* ResultInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultInputViewController.h; sourceTree = "<group>"; };
+		0ADE66751C9587E700100D79 /* ResultInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultInputViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				0A6F45191C858E2D0002E808 /* ViewController.h */,
 				0A6F451A1C858E2D0002E808 /* ViewController.m */,
 				0A6F451C1C858E2D0002E808 /* Main.storyboard */,
+				0ADE66741C9587E700100D79 /* ResultInputViewController.h */,
+				0ADE66751C9587E700100D79 /* ResultInputViewController.m */,
 				0A6F451F1C858E2D0002E808 /* Assets.xcassets */,
 				0A6F45211C858E2D0002E808 /* LaunchScreen.storyboard */,
 				0A6F45241C858E2D0002E808 /* Info.plist */,
@@ -271,6 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADE66761C9587E700100D79 /* ResultInputViewController.m in Sources */,
 				0A6F451B1C858E2D0002E808 /* ViewController.m in Sources */,
 				0A6F45181C858E2D0002E808 /* AppDelegate.m in Sources */,
 				0A6F45151C858E2D0002E808 /* main.m in Sources */,
