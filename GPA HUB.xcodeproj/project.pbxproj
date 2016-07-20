@@ -7,71 +7,68 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A6F45151C858E2D0002E808 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F45141C858E2D0002E808 /* main.m */; };
-		0A6F45181C858E2D0002E808 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F45171C858E2D0002E808 /* AppDelegate.m */; };
-		0A6F451B1C858E2D0002E808 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F451A1C858E2D0002E808 /* ViewController.m */; };
-		0A6F451E1C858E2D0002E808 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F451C1C858E2D0002E808 /* Main.storyboard */; };
-		0A6F45201C858E2D0002E808 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F451F1C858E2D0002E808 /* Assets.xcassets */; };
-		0A6F45231C858E2D0002E808 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A6F45211C858E2D0002E808 /* LaunchScreen.storyboard */; };
-		0A6F452E1C858E2D0002E808 /* GPA_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F452D1C858E2D0002E808 /* GPA_HUBTests.m */; };
-		0A6F45391C858E2D0002E808 /* GPA_HUBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6F45381C858E2D0002E808 /* GPA_HUBUITests.m */; };
-		0ADE66761C9587E700100D79 /* ResultInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE66751C9587E700100D79 /* ResultInputViewController.m */; settings = {ASSET_TAGS = (); }; };
+		0A8B56781D4003A500D52C1D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B56771D4003A500D52C1D /* main.m */; };
+		0A8B567B1D4003A500D52C1D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B567A1D4003A500D52C1D /* AppDelegate.m */; };
+		0A8B567E1D4003A500D52C1D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B567D1D4003A500D52C1D /* ViewController.m */; };
+		0A8B56811D4003A500D52C1D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8B567F1D4003A500D52C1D /* Main.storyboard */; };
+		0A8B56831D4003A500D52C1D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A8B56821D4003A500D52C1D /* Assets.xcassets */; };
+		0A8B56861D4003A500D52C1D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A8B56841D4003A500D52C1D /* LaunchScreen.storyboard */; };
+		0A8B56911D4003A500D52C1D /* GPA_HUBTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B56901D4003A500D52C1D /* GPA_HUBTests.m */; };
+		0A8B569C1D4003A500D52C1D /* GPA_HUBUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A8B569B1D4003A500D52C1D /* GPA_HUBUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0A6F452A1C858E2D0002E808 /* PBXContainerItemProxy */ = {
+		0A8B568D1D4003A500D52C1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0A6F45081C858E2D0002E808 /* Project object */;
+			containerPortal = 0A8B566B1D4003A400D52C1D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A6F450F1C858E2D0002E808;
+			remoteGlobalIDString = 0A8B56721D4003A400D52C1D;
 			remoteInfo = "GPA HUB";
 		};
-		0A6F45351C858E2D0002E808 /* PBXContainerItemProxy */ = {
+		0A8B56981D4003A500D52C1D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0A6F45081C858E2D0002E808 /* Project object */;
+			containerPortal = 0A8B566B1D4003A400D52C1D /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 0A6F450F1C858E2D0002E808;
+			remoteGlobalIDString = 0A8B56721D4003A400D52C1D;
 			remoteInfo = "GPA HUB";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A6F45101C858E2D0002E808 /* GPA HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA HUB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A6F45141C858E2D0002E808 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0A6F45161C858E2D0002E808 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0A6F45171C858E2D0002E808 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0A6F45191C858E2D0002E808 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0A6F451A1C858E2D0002E808 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0A6F451D1C858E2D0002E808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0A6F451F1C858E2D0002E808 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0A6F45221C858E2D0002E808 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0A6F45241C858E2D0002E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A6F45291C858E2D0002E808 /* GPA HUBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA HUBTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A6F452D1C858E2D0002E808 /* GPA_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPA_HUBTests.m; sourceTree = "<group>"; };
-		0A6F452F1C858E2D0002E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0A6F45341C858E2D0002E808 /* GPA HUBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA HUBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A6F45381C858E2D0002E808 /* GPA_HUBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPA_HUBUITests.m; sourceTree = "<group>"; };
-		0A6F453A1C858E2D0002E808 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0ADE66741C9587E700100D79 /* ResultInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultInputViewController.h; sourceTree = "<group>"; };
-		0ADE66751C9587E700100D79 /* ResultInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultInputViewController.m; sourceTree = "<group>"; };
+		0A8B56731D4003A400D52C1D /* GPA HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA HUB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8B56771D4003A500D52C1D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A8B56791D4003A500D52C1D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A8B567A1D4003A500D52C1D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A8B567C1D4003A500D52C1D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0A8B567D1D4003A500D52C1D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0A8B56801D4003A500D52C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A8B56821D4003A500D52C1D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A8B56851D4003A500D52C1D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A8B56871D4003A500D52C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8B568C1D4003A500D52C1D /* GPA HUBTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA HUBTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8B56901D4003A500D52C1D /* GPA_HUBTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPA_HUBTests.m; sourceTree = "<group>"; };
+		0A8B56921D4003A500D52C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A8B56971D4003A500D52C1D /* GPA HUBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GPA HUBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A8B569B1D4003A500D52C1D /* GPA_HUBUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPA_HUBUITests.m; sourceTree = "<group>"; };
+		0A8B569D1D4003A500D52C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0A6F450D1C858E2D0002E808 /* Frameworks */ = {
+		0A8B56701D4003A400D52C1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45261C858E2D0002E808 /* Frameworks */ = {
+		0A8B56891D4003A500D52C1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45311C858E2D0002E808 /* Frameworks */ = {
+		0A8B56941D4003A500D52C1D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,66 +78,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A6F45071C858E2D0002E808 = {
+		0A8B566A1D4003A400D52C1D = {
 			isa = PBXGroup;
 			children = (
-				0A6F45121C858E2D0002E808 /* GPA HUB */,
-				0A6F452C1C858E2D0002E808 /* GPA HUBTests */,
-				0A6F45371C858E2D0002E808 /* GPA HUBUITests */,
-				0A6F45111C858E2D0002E808 /* Products */,
+				0A8B56751D4003A500D52C1D /* GPA HUB */,
+				0A8B568F1D4003A500D52C1D /* GPA HUBTests */,
+				0A8B569A1D4003A500D52C1D /* GPA HUBUITests */,
+				0A8B56741D4003A400D52C1D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0A6F45111C858E2D0002E808 /* Products */ = {
+		0A8B56741D4003A400D52C1D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F45101C858E2D0002E808 /* GPA HUB.app */,
-				0A6F45291C858E2D0002E808 /* GPA HUBTests.xctest */,
-				0A6F45341C858E2D0002E808 /* GPA HUBUITests.xctest */,
+				0A8B56731D4003A400D52C1D /* GPA HUB.app */,
+				0A8B568C1D4003A500D52C1D /* GPA HUBTests.xctest */,
+				0A8B56971D4003A500D52C1D /* GPA HUBUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0A6F45121C858E2D0002E808 /* GPA HUB */ = {
+		0A8B56751D4003A500D52C1D /* GPA HUB */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F45161C858E2D0002E808 /* AppDelegate.h */,
-				0A6F45171C858E2D0002E808 /* AppDelegate.m */,
-				0A6F45191C858E2D0002E808 /* ViewController.h */,
-				0A6F451A1C858E2D0002E808 /* ViewController.m */,
-				0A6F451C1C858E2D0002E808 /* Main.storyboard */,
-				0ADE66741C9587E700100D79 /* ResultInputViewController.h */,
-				0ADE66751C9587E700100D79 /* ResultInputViewController.m */,
-				0A6F451F1C858E2D0002E808 /* Assets.xcassets */,
-				0A6F45211C858E2D0002E808 /* LaunchScreen.storyboard */,
-				0A6F45241C858E2D0002E808 /* Info.plist */,
-				0A6F45131C858E2D0002E808 /* Supporting Files */,
+				0A8B56791D4003A500D52C1D /* AppDelegate.h */,
+				0A8B567A1D4003A500D52C1D /* AppDelegate.m */,
+				0A8B567C1D4003A500D52C1D /* ViewController.h */,
+				0A8B567D1D4003A500D52C1D /* ViewController.m */,
+				0A8B567F1D4003A500D52C1D /* Main.storyboard */,
+				0A8B56821D4003A500D52C1D /* Assets.xcassets */,
+				0A8B56841D4003A500D52C1D /* LaunchScreen.storyboard */,
+				0A8B56871D4003A500D52C1D /* Info.plist */,
+				0A8B56761D4003A500D52C1D /* Supporting Files */,
 			);
 			path = "GPA HUB";
 			sourceTree = "<group>";
 		};
-		0A6F45131C858E2D0002E808 /* Supporting Files */ = {
+		0A8B56761D4003A500D52C1D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F45141C858E2D0002E808 /* main.m */,
+				0A8B56771D4003A500D52C1D /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		0A6F452C1C858E2D0002E808 /* GPA HUBTests */ = {
+		0A8B568F1D4003A500D52C1D /* GPA HUBTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F452D1C858E2D0002E808 /* GPA_HUBTests.m */,
-				0A6F452F1C858E2D0002E808 /* Info.plist */,
+				0A8B56901D4003A500D52C1D /* GPA_HUBTests.m */,
+				0A8B56921D4003A500D52C1D /* Info.plist */,
 			);
 			path = "GPA HUBTests";
 			sourceTree = "<group>";
 		};
-		0A6F45371C858E2D0002E808 /* GPA HUBUITests */ = {
+		0A8B569A1D4003A500D52C1D /* GPA HUBUITests */ = {
 			isa = PBXGroup;
 			children = (
-				0A6F45381C858E2D0002E808 /* GPA_HUBUITests.m */,
-				0A6F453A1C858E2D0002E808 /* Info.plist */,
+				0A8B569B1D4003A500D52C1D /* GPA_HUBUITests.m */,
+				0A8B569D1D4003A500D52C1D /* Info.plist */,
 			);
 			path = "GPA HUBUITests";
 			sourceTree = "<group>";
@@ -148,13 +143,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0A6F450F1C858E2D0002E808 /* GPA HUB */ = {
+		0A8B56721D4003A400D52C1D /* GPA HUB */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A6F453D1C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUB" */;
+			buildConfigurationList = 0A8B56A01D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUB" */;
 			buildPhases = (
-				0A6F450C1C858E2D0002E808 /* Sources */,
-				0A6F450D1C858E2D0002E808 /* Frameworks */,
-				0A6F450E1C858E2D0002E808 /* Resources */,
+				0A8B566F1D4003A400D52C1D /* Sources */,
+				0A8B56701D4003A400D52C1D /* Frameworks */,
+				0A8B56711D4003A400D52C1D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -162,69 +157,68 @@
 			);
 			name = "GPA HUB";
 			productName = "GPA HUB";
-			productReference = 0A6F45101C858E2D0002E808 /* GPA HUB.app */;
+			productReference = 0A8B56731D4003A400D52C1D /* GPA HUB.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0A6F45281C858E2D0002E808 /* GPA HUBTests */ = {
+		0A8B568B1D4003A500D52C1D /* GPA HUBTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A6F45401C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUBTests" */;
+			buildConfigurationList = 0A8B56A31D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUBTests" */;
 			buildPhases = (
-				0A6F45251C858E2D0002E808 /* Sources */,
-				0A6F45261C858E2D0002E808 /* Frameworks */,
-				0A6F45271C858E2D0002E808 /* Resources */,
+				0A8B56881D4003A500D52C1D /* Sources */,
+				0A8B56891D4003A500D52C1D /* Frameworks */,
+				0A8B568A1D4003A500D52C1D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0A6F452B1C858E2D0002E808 /* PBXTargetDependency */,
+				0A8B568E1D4003A500D52C1D /* PBXTargetDependency */,
 			);
 			name = "GPA HUBTests";
 			productName = "GPA HUBTests";
-			productReference = 0A6F45291C858E2D0002E808 /* GPA HUBTests.xctest */;
+			productReference = 0A8B568C1D4003A500D52C1D /* GPA HUBTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0A6F45331C858E2D0002E808 /* GPA HUBUITests */ = {
+		0A8B56961D4003A500D52C1D /* GPA HUBUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A6F45431C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUBUITests" */;
+			buildConfigurationList = 0A8B56A61D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUBUITests" */;
 			buildPhases = (
-				0A6F45301C858E2D0002E808 /* Sources */,
-				0A6F45311C858E2D0002E808 /* Frameworks */,
-				0A6F45321C858E2D0002E808 /* Resources */,
+				0A8B56931D4003A500D52C1D /* Sources */,
+				0A8B56941D4003A500D52C1D /* Frameworks */,
+				0A8B56951D4003A500D52C1D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0A6F45361C858E2D0002E808 /* PBXTargetDependency */,
+				0A8B56991D4003A500D52C1D /* PBXTargetDependency */,
 			);
 			name = "GPA HUBUITests";
 			productName = "GPA HUBUITests";
-			productReference = 0A6F45341C858E2D0002E808 /* GPA HUBUITests.xctest */;
+			productReference = 0A8B56971D4003A500D52C1D /* GPA HUBUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0A6F45081C858E2D0002E808 /* Project object */ = {
+		0A8B566B1D4003A400D52C1D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = omalperera.com;
 				TargetAttributes = {
-					0A6F450F1C858E2D0002E808 = {
-						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = BGKE7FY94W;
+					0A8B56721D4003A400D52C1D = {
+						CreatedOnToolsVersion = 7.3.1;
 					};
-					0A6F45281C858E2D0002E808 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 0A6F450F1C858E2D0002E808;
+					0A8B568B1D4003A500D52C1D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0A8B56721D4003A400D52C1D;
 					};
-					0A6F45331C858E2D0002E808 = {
-						CreatedOnToolsVersion = 7.0.1;
-						TestTargetID = 0A6F450F1C858E2D0002E808;
+					0A8B56961D4003A500D52C1D = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 0A8B56721D4003A400D52C1D;
 					};
 				};
 			};
-			buildConfigurationList = 0A6F450B1C858E2D0002E808 /* Build configuration list for PBXProject "GPA HUB" */;
+			buildConfigurationList = 0A8B566E1D4003A400D52C1D /* Build configuration list for PBXProject "GPA HUB" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -232,37 +226,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 0A6F45071C858E2D0002E808;
-			productRefGroup = 0A6F45111C858E2D0002E808 /* Products */;
+			mainGroup = 0A8B566A1D4003A400D52C1D;
+			productRefGroup = 0A8B56741D4003A400D52C1D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A6F450F1C858E2D0002E808 /* GPA HUB */,
-				0A6F45281C858E2D0002E808 /* GPA HUBTests */,
-				0A6F45331C858E2D0002E808 /* GPA HUBUITests */,
+				0A8B56721D4003A400D52C1D /* GPA HUB */,
+				0A8B568B1D4003A500D52C1D /* GPA HUBTests */,
+				0A8B56961D4003A500D52C1D /* GPA HUBUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0A6F450E1C858E2D0002E808 /* Resources */ = {
+		0A8B56711D4003A400D52C1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F45231C858E2D0002E808 /* LaunchScreen.storyboard in Resources */,
-				0A6F45201C858E2D0002E808 /* Assets.xcassets in Resources */,
-				0A6F451E1C858E2D0002E808 /* Main.storyboard in Resources */,
+				0A8B56861D4003A500D52C1D /* LaunchScreen.storyboard in Resources */,
+				0A8B56831D4003A500D52C1D /* Assets.xcassets in Resources */,
+				0A8B56811D4003A500D52C1D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45271C858E2D0002E808 /* Resources */ = {
+		0A8B568A1D4003A500D52C1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45321C858E2D0002E808 /* Resources */ = {
+		0A8B56951D4003A500D52C1D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -272,61 +266,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0A6F450C1C858E2D0002E808 /* Sources */ = {
+		0A8B566F1D4003A400D52C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADE66761C9587E700100D79 /* ResultInputViewController.m in Sources */,
-				0A6F451B1C858E2D0002E808 /* ViewController.m in Sources */,
-				0A6F45181C858E2D0002E808 /* AppDelegate.m in Sources */,
-				0A6F45151C858E2D0002E808 /* main.m in Sources */,
+				0A8B567E1D4003A500D52C1D /* ViewController.m in Sources */,
+				0A8B567B1D4003A500D52C1D /* AppDelegate.m in Sources */,
+				0A8B56781D4003A500D52C1D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45251C858E2D0002E808 /* Sources */ = {
+		0A8B56881D4003A500D52C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F452E1C858E2D0002E808 /* GPA_HUBTests.m in Sources */,
+				0A8B56911D4003A500D52C1D /* GPA_HUBTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		0A6F45301C858E2D0002E808 /* Sources */ = {
+		0A8B56931D4003A500D52C1D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A6F45391C858E2D0002E808 /* GPA_HUBUITests.m in Sources */,
+				0A8B569C1D4003A500D52C1D /* GPA_HUBUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0A6F452B1C858E2D0002E808 /* PBXTargetDependency */ = {
+		0A8B568E1D4003A500D52C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A6F450F1C858E2D0002E808 /* GPA HUB */;
-			targetProxy = 0A6F452A1C858E2D0002E808 /* PBXContainerItemProxy */;
+			target = 0A8B56721D4003A400D52C1D /* GPA HUB */;
+			targetProxy = 0A8B568D1D4003A500D52C1D /* PBXContainerItemProxy */;
 		};
-		0A6F45361C858E2D0002E808 /* PBXTargetDependency */ = {
+		0A8B56991D4003A500D52C1D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A6F450F1C858E2D0002E808 /* GPA HUB */;
-			targetProxy = 0A6F45351C858E2D0002E808 /* PBXContainerItemProxy */;
+			target = 0A8B56721D4003A400D52C1D /* GPA HUB */;
+			targetProxy = 0A8B56981D4003A500D52C1D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0A6F451C1C858E2D0002E808 /* Main.storyboard */ = {
+		0A8B567F1D4003A500D52C1D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A6F451D1C858E2D0002E808 /* Base */,
+				0A8B56801D4003A500D52C1D /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0A6F45211C858E2D0002E808 /* LaunchScreen.storyboard */ = {
+		0A8B56841D4003A500D52C1D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0A6F45221C858E2D0002E808 /* Base */,
+				0A8B56851D4003A500D52C1D /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -334,10 +327,11 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0A6F453B1C858E2D0002E808 /* Debug */ = {
+		0A8B569E1D4003A500D52C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -370,17 +364,18 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
-		0A6F453C1C858E2D0002E808 /* Release */ = {
+		0A8B569F1D4003A500D52C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -407,42 +402,36 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		0A6F453E1C858E2D0002E808 /* Debug */ = {
+		0A8B56A11D4003A500D52C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GPA HUB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omalperera.GPA-HUB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
-		0A6F453F1C858E2D0002E808 /* Release */ = {
+		0A8B56A21D4003A500D52C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "GPA HUB/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omalperera.GPA-HUB";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
-		0A6F45411C858E2D0002E808 /* Debug */ = {
+		0A8B56A41D4003A500D52C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,7 +443,7 @@
 			};
 			name = Debug;
 		};
-		0A6F45421C858E2D0002E808 /* Release */ = {
+		0A8B56A51D4003A500D52C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,7 +455,7 @@
 			};
 			name = Release;
 		};
-		0A6F45441C858E2D0002E808 /* Debug */ = {
+		0A8B56A71D4003A500D52C1D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "GPA HUBUITests/Info.plist";
@@ -474,11 +463,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omalperera.GPA-HUBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "GPA HUB";
-				USES_XCTRUNNER = YES;
 			};
 			name = Debug;
 		};
-		0A6F45451C858E2D0002E808 /* Release */ = {
+		0A8B56A81D4003A500D52C1D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "GPA HUBUITests/Info.plist";
@@ -486,50 +474,46 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.omalperera.GPA-HUBUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = "GPA HUB";
-				USES_XCTRUNNER = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0A6F450B1C858E2D0002E808 /* Build configuration list for PBXProject "GPA HUB" */ = {
+		0A8B566E1D4003A400D52C1D /* Build configuration list for PBXProject "GPA HUB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A6F453B1C858E2D0002E808 /* Debug */,
-				0A6F453C1C858E2D0002E808 /* Release */,
+				0A8B569E1D4003A500D52C1D /* Debug */,
+				0A8B569F1D4003A500D52C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A6F453D1C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUB" */ = {
+		0A8B56A01D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUB" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A6F453E1C858E2D0002E808 /* Debug */,
-				0A6F453F1C858E2D0002E808 /* Release */,
+				0A8B56A11D4003A500D52C1D /* Debug */,
+				0A8B56A21D4003A500D52C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		0A6F45401C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUBTests" */ = {
+		0A8B56A31D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUBTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A6F45411C858E2D0002E808 /* Debug */,
-				0A6F45421C858E2D0002E808 /* Release */,
+				0A8B56A41D4003A500D52C1D /* Debug */,
+				0A8B56A51D4003A500D52C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
-		0A6F45431C858E2D0002E808 /* Build configuration list for PBXNativeTarget "GPA HUBUITests" */ = {
+		0A8B56A61D4003A500D52C1D /* Build configuration list for PBXNativeTarget "GPA HUBUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A6F45441C858E2D0002E808 /* Debug */,
-				0A6F45451C858E2D0002E808 /* Release */,
+				0A8B56A71D4003A500D52C1D /* Debug */,
+				0A8B56A81D4003A500D52C1D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0A6F45081C858E2D0002E808 /* Project object */;
+	rootObject = 0A8B566B1D4003A400D52C1D /* Project object */;
 }
