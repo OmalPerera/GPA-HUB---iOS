@@ -3,12 +3,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GPA_HUB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -17,52 +19,109 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="graph" translatesAutoresizingMaskIntoConstraints="NO" id="6z0-rp-CPO">
-                                <rect key="frame" x="40" y="119" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_image" translatesAutoresizingMaskIntoConstraints="NO" id="uHC-cA-1Gi">
+                                <rect key="frame" x="21" y="88" width="278" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="4dt-Pc-5k4"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YZi-4E-zUx">
-                                <rect key="frame" x="32" y="446" width="257" height="42"/>
-                                <color key="backgroundColor" red="0.18431372549019609" green="0.40000000000000002" blue="0.73333333333333328" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
-                                <state key="normal" title="Next">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="top" usesAttributedText="YES" placeholder="your university" minimumFontSize="17" background="home_text_field_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Yb5-zU-Jat">
+                                <rect key="frame" x="37" y="370" width="247" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="VtC-Fa-Gk3"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="your university">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32549019607843138" green="0.49803921568627452" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" usesAttributedText="YES" placeholder="your name" minimumFontSize="17" background="home_text_field_bg" translatesAutoresizingMaskIntoConstraints="NO" id="mDh-zs-I4x">
+                                <rect key="frame" x="37" y="311" width="247" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="bJP-x3-kxs"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="your name">
+                                        <attributes>
+                                            <color key="NSColor" red="0.32549019607843138" green="0.49803921568627452" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDg-UI-pak">
+                                <rect key="frame" x="37" y="450" width="247" height="41"/>
+                                <color key="backgroundColor" red="0.17994775686849154" green="0.38581224915898021" blue="0.69411764705882351" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lDg-UI-pak" secondAttribute="height" multiplier="247:41" id="UjS-ed-gFU"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Next">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="y7b-mK-oic"/>
-                                </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" textAlignment="center" minimumFontSize="17" background="text_field_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vhl-3q-KPZ">
-                                <rect key="frame" x="32" y="298" width="257" height="30"/>
-                                <color key="textColor" red="0.10980392156862745" green="0.29411764705882354" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="University" textAlignment="center" minimumFontSize="17" background="text_field_bg" translatesAutoresizingMaskIntoConstraints="NO" id="Sy5-Dg-yBd">
-                                <rect key="frame" x="32" y="341" width="257" height="30"/>
-                                <color key="textColor" red="0.10980392160000001" green="0.29411764709999999" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJA-yx-4d0">
+                                <rect key="frame" x="98" y="283" width="124" height="2"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.94999999999999996" height="1"/>
+                        <constraints>
+                            <constraint firstItem="uHC-cA-1Gi" firstAttribute="centerX" secondItem="BJA-yx-4d0" secondAttribute="centerX" id="9qT-xL-Ix6"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ClK-OQ-oqK"/>
+                            <constraint firstItem="BJA-yx-4d0" firstAttribute="top" secondItem="uHC-cA-1Gi" secondAttribute="bottom" constant="41" id="GR9-C9-6Rh"/>
+                            <constraint firstItem="mDh-zs-I4x" firstAttribute="leading" secondItem="Yb5-zU-Jat" secondAttribute="leading" id="JEf-uS-M74"/>
+                            <constraint firstItem="mDh-zs-I4x" firstAttribute="trailing" secondItem="Yb5-zU-Jat" secondAttribute="trailing" id="KIq-u7-5t2"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="centerX" secondItem="uHC-cA-1Gi" secondAttribute="centerX" id="Nhb-gm-gQB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lDg-UI-pak" secondAttribute="trailing" constant="16" id="PZR-Qn-2t5"/>
+                            <constraint firstItem="uHC-cA-1Gi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="VV7-Zl-XP8"/>
+                            <constraint firstItem="mDh-zs-I4x" firstAttribute="trailing" secondItem="Yb5-zU-Jat" secondAttribute="trailing" id="WQS-Wb-k7s"/>
+                            <constraint firstItem="lDg-UI-pak" firstAttribute="top" secondItem="Yb5-zU-Jat" secondAttribute="bottom" constant="47" id="aeK-p5-ljQ"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="top" secondItem="mDh-zs-I4x" secondAttribute="bottom" constant="26" id="g8D-ML-csn"/>
+                            <constraint firstItem="mDh-zs-I4x" firstAttribute="leading" secondItem="BJA-yx-4d0" secondAttribute="leading" constant="-65" id="hSd-cv-Z9X"/>
+                            <constraint firstItem="mDh-zs-I4x" firstAttribute="top" secondItem="BJA-yx-4d0" secondAttribute="bottom" constant="23" id="iyi-SR-tA9"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="trailing" secondItem="lDg-UI-pak" secondAttribute="trailing" id="ngf-VM-DFp"/>
+                            <constraint firstItem="BJA-yx-4d0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oLw-VJ-sWn"/>
+                            <constraint firstItem="BJA-yx-4d0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ofY-51-SRw"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="trailing" secondItem="lDg-UI-pak" secondAttribute="trailing" id="uhf-Jb-IQy"/>
+                            <constraint firstItem="Yb5-zU-Jat" firstAttribute="leading" secondItem="lDg-UI-pak" secondAttribute="leading" id="xob-oi-QUb"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="loginName" destination="vhl-3q-KPZ" id="cZT-dF-yQI"/>
-                        <outlet property="loginUniversity" destination="Sy5-Dg-yBd" id="Ktq-cp-PN8"/>
+                        <outlet property="button_login" destination="lDg-UI-pak" id="hlc-ZQ-Ubl"/>
+                        <outlet property="text_field_userName" destination="mDh-zs-I4x" id="xs9-I6-Xi9"/>
+                        <outlet property="text_filed_userUniversity" destination="Yb5-zU-Jat" id="B3F-yP-YI9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="343"/>
+            <point key="canvasLocation" x="130" y="284"/>
         </scene>
     </scenes>
     <resources>
-        <image name="graph" width="345" height="162"/>
-        <image name="text_field_bg" width="1" height="38"/>
+        <image name="home_image" width="450" height="260"/>
+        <image name="home_text_field_bg" width="2" height="120"/>
     </resources>
 </document>
