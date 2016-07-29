@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A50E4E41D430C5600E14E74"
+               BlueprintIdentifier = "0A7171731D48837A00DEBFF3"
                BuildableName = "GPA HUB.app"
                BlueprintName = "GPA HUB"
                ReferencedContainer = "container:GPA HUB.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A50E4F81D430C5600E14E74"
+               BlueprintIdentifier = "0A71718C1D48837B00DEBFF3"
                BuildableName = "GPA HUBTests.xctest"
                BlueprintName = "GPA HUBTests"
                ReferencedContainer = "container:GPA HUB.xcodeproj">
@@ -42,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A50E5031D430C5600E14E74"
+               BlueprintIdentifier = "0A7171971D48837B00DEBFF3"
                BuildableName = "GPA HUBUITests.xctest"
                BlueprintName = "GPA HUBUITests"
                ReferencedContainer = "container:GPA HUB.xcodeproj">
@@ -52,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A50E4E41D430C5600E14E74"
+            BlueprintIdentifier = "0A7171731D48837A00DEBFF3"
             BuildableName = "GPA HUB.app"
             BlueprintName = "GPA HUB"
             ReferencedContainer = "container:GPA HUB.xcodeproj">
@@ -75,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A50E4E41D430C5600E14E74"
+            BlueprintIdentifier = "0A7171731D48837A00DEBFF3"
             BuildableName = "GPA HUB.app"
             BlueprintName = "GPA HUB"
             ReferencedContainer = "container:GPA HUB.xcodeproj">
@@ -94,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A50E4E41D430C5600E14E74"
+            BlueprintIdentifier = "0A7171731D48837A00DEBFF3"
             BuildableName = "GPA HUB.app"
             BlueprintName = "GPA HUB"
             ReferencedContainer = "container:GPA HUB.xcodeproj">
