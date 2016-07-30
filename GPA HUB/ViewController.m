@@ -17,6 +17,19 @@
 
 @implementation ViewController
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    cell.textLabel.text = @"This is a cell";
+    
+    return cell;
+}
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -31,13 +44,13 @@
 - (IBAction)login:(UIButton *)sender {
 }
 
-/*
+
 // dismisses keyboard when return key pressed on software keyboard
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
     [textField resignFirstResponder];
     return YES;
 }
-*/
+
 
 // dissmisses keyboard when text field disselected
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
@@ -45,13 +58,7 @@
 }
 
 
-
-
-
-
-
 /* ** START : To move auto layout up when Keyboard is avilable ** */
-
 - (void)viewWillAppear:(BOOL)animated {
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
