@@ -1,39 +1,25 @@
 //
-//  ViewController.m
+//  LoginViewController.m
 //  GPA HUB
 //
-//  Created by Omal Perera on 7/27/16.
+//  Created by Omal Perera on 7/30/16.
 //  Copyright © 2016 omalperera.com. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *text_field_userName;
 @property (weak, nonatomic) IBOutlet UITextField *text_filed_userUniversity;
 @property (weak, nonatomic) IBOutlet UIButton *button_login;
 
+
 @end
 
-@implementation ViewController
-
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
-}
-
-
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-    cell.textLabel.text = @"This is a cell";
-    
-    return cell;
-}
-
+@implementation LoginViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -91,8 +77,5 @@
     }];
 }
 /* ** END : To move auto layout up when Keyboard is avilable ** */
-
-
-
 
 @end
