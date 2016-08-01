@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A30F0691D4DEC9700C83CAA /* DataResults.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A30F0681D4DEC9700C83CAA /* DataResults.m */; };
 		0A7171791D48837B00DEBFF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A7171781D48837B00DEBFF3 /* main.m */; };
 		0A71717C1D48837B00DEBFF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A71717B1D48837B00DEBFF3 /* AppDelegate.m */; };
 		0A7171821D48837B00DEBFF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A7171801D48837B00DEBFF3 /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A30F0671D4DEC9700C83CAA /* DataResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataResults.h; sourceTree = "<group>"; };
+		0A30F0681D4DEC9700C83CAA /* DataResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataResults.m; sourceTree = "<group>"; };
 		0A7171741D48837A00DEBFF3 /* GPA HUB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GPA HUB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A7171781D48837B00DEBFF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0A71717A1D48837B00DEBFF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -110,6 +113,8 @@
 				0A9484A91D4D0D72008D6C63 /* LoginViewController.h */,
 				0AFEC50A1D4D1BC5000B027E /* ResultsViewController.h */,
 				0AFEC50B1D4D1BC5000B027E /* ResultsViewController.m */,
+				0A30F0671D4DEC9700C83CAA /* DataResults.h */,
+				0A30F0681D4DEC9700C83CAA /* DataResults.m */,
 				0AFEC5011D4D19B6000B027E /* EditResultsViewController.h */,
 				0AFEC5021D4D19B6000B027E /* EditResultsViewController.m */,
 				0A9484AA1D4D0D72008D6C63 /* LoginViewController.m */,
@@ -286,6 +291,7 @@
 				0A7171791D48837B00DEBFF3 /* main.m in Sources */,
 				0AFEC50C1D4D1BC5000B027E /* ResultsViewController.m in Sources */,
 				0A9484AB1D4D0D72008D6C63 /* LoginViewController.m in Sources */,
+				0A30F0691D4DEC9700C83CAA /* DataResults.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

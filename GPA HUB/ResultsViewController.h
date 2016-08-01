@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataResults.h"
 
 @interface ResultsViewController : UIViewController <UITableViewDataSource>
+
+@property (nonatomic) NSString *RVCccc;
+@property (nonatomic) NSString *RCVggg;
+@property (nonatomic) NSMutableArray *resultInformation;
 
 @end

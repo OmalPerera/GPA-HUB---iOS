@@ -8,20 +8,33 @@
 
 #import "EditResultsViewController.h"
 
+
 @interface EditResultsViewController()
-@property (weak, nonatomic) IBOutlet UIPickerView *creditPicker;
-@property (weak, nonatomic) IBOutlet UIPickerView *gradesPicker;
-@property  NSArray *credits;
-@property  NSArray *grades;
+@property (strong, nonatomic) IBOutlet UILabel *color;
+@property (strong, nonatomic) IBOutlet UIPickerView *picker;
+@property (weak, nonatomic) IBOutlet UITextField *subjectName;
+- (IBAction)editFinished:(id)sender;
 @end
 
 @implementation EditResultsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.credits = @[@"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10"];
+    
+    UINavigationBar *bar = [self.navigationController navigationBar];
+    [bar setBarTintColor:[UIColor colorWithRed:(0.1098039225/1.0) green:(0.2941176593/1.0) blue:(0.666666686500/1.0) alpha:1]];
+    [[[self navigationController] navigationBar] setBarStyle:UIBarStyleBlackTranslucent];
+    self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
+    
+    self.credits = @[@"0", @"1", @"2", @"3", @"4", @"5", @"6", @"7", @"8", @"9", @"10"];
     self.grades = @[@"A+", @"A", @"A-", @"B+", @"B", @"B-", @"C+", @"C", @"C-", @"D+", @"D", @"D-", @"E"];
+    self.enteredCreditValue = @"0";
+    self.enteredGrade = @"E";
+    
 }
+
+
+
 
 // dismisses keyboard when return key pressed on software keyboard
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
@@ -38,16 +51,54 @@
 
 /* ** START : To handle the picker for selesct Credits & Grade ** */
 -(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
-    return 1;
+    return 2;
 }
 
 -(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
-    return [self.credits count];
+    //set number of rows
+    if(component== 0){
+        return [self.credits count];
+    }
+    else{
+        return [self.grades count];
+    }
 }
 
 -(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
-    return self.credits[row];
+    if(component == 0){
+        return [self.credits objectAtIndex:row];
+    }else
+    {
+        return [self.grades objectAtIndex:row];
+    }
 }
 /* ** END : To handle the picker for selesct Credits & Grade ** */
 
+
+- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+{
+    NSInteger creditRow = [self.picker selectedRowInComponent:0];
+    NSInteger gradesRow = [self.picker selectedRowInComponent:1];
+    
+    self.enteredCreditValue = (NSString *)[self.credits objectAtIndex:creditRow];
+    self.enteredGrade = (NSString *)[self.grades objectAtIndex:gradesRow];
+}
+
+- (IBAction)editFinished:(id)sender {
+    self.color.text = [NSString stringWithFormat:@"%@ %@", self.enteredCreditValue, self.enteredGrade];
+    
+    DataResults *resultRow_1 = [[DataResults alloc] init];
+    resultRow_1.creditObject = self.enteredCreditValue;
+    resultRow_1.gradesObject = self.enteredGrade;
+    resultRow_1.subjectNameObject = self.subjectName.text;
+}
+
+
+
 @end
+
+
+
+
+
+

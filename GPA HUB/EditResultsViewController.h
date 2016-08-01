@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataResults.h"
 
 @interface EditResultsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
+
+@property NSString *enteredCreditValue;
+@property NSString *enteredGrade;
+@property (strong, nonatomic) NSArray *credits;
+@property (strong, nonatomic) NSArray *grades;
+
 
 @end
