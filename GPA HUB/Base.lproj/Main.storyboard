@@ -221,6 +221,9 @@
                                 <items>
                                     <barButtonItem image="settings" width="40" id="Qld-hW-2uM">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="7mG-cQ-74l" kind="push" id="Z4K-cn-bVv"/>
+                                        </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="QUL-Fl-yDA"/>
                                     <barButtonItem image="load" width="40" id="fLk-2g-5b6">
@@ -233,6 +236,9 @@
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="gum-ex-x9Y"/>
                                     <barButtonItem image="calculate" width="40" id="Df9-Ac-Bvo">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <segue destination="G2b-Qh-ViF" kind="push" id="eow-Da-d6o"/>
+                                        </connections>
                                     </barButtonItem>
                                 </items>
                                 <color key="barTintColor" red="0.1098039225" green="0.2941176593" blue="0.66666668650000005" alpha="1" colorSpace="calibratedRGB"/>
@@ -352,6 +358,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mLb-Ox-AXf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1463" y="284"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K51-Nv-kfe">
+            <objects>
+                <viewController id="7mG-cQ-74l" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ui2-C2-Ehi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ojf-1h-bpS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nnf-qB-jIP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AcQ-k1-iNB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mUm-hv-nsm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="1085"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="I17-vE-7GJ">
+            <objects>
+                <viewController id="G2b-Qh-ViF" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JWk-LH-WOO"/>
+                        <viewControllerLayoutGuide type="bottom" id="qcQ-LX-EBo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OPx-eW-C8m">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lif-Cm-AxY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dDm-4t-k6L" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1471" y="1073"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d9m-0m-J5r">
