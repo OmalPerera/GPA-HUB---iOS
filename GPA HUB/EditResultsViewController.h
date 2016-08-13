@@ -7,10 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DataResults.h"
+//#import "DataResults.h"
+#import "ResultsViewController.h"
+
+@class EditResultsViewController;
 
 @interface EditResultsViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
+
+@property (weak, nonatomic) id<ResultsViewControllerDelegate> delegate;
 @property NSString *enteredCreditValue;
 @property NSString *enteredGrade;
 @property (strong, nonatomic) NSArray *credits;

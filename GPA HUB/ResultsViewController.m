@@ -7,11 +7,14 @@
 //
 
 #import "ResultsViewController.h"
+#import "EditResultsViewController.h"
 
-@interface ResultsViewController(){
-    
-}
+@interface ResultsViewController()
+
+// This is the label that will receive the text sent from the second view controller
+@property (weak, nonatomic) IBOutlet UILabel *responseLabel;
 @end
+
 
 @implementation ResultsViewController
 
@@ -74,16 +77,12 @@
     resultRow_10.gradesObject = @"A";
     resultRow_10.subjectNameObject = @"Web Technoologies";
     [_resultInformation addObject:resultRow_10];
-    
-    
-    
-    
-    
 }
 
 /* ** START : To handle TableView in the Result Input ** */
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _resultInformation.count;
+    return 1;
+    //return _resultInformation.count;
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,9 +119,20 @@
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"Result Input";
 }
-
-
 /* ** END : To handle TableView in the Result Input ** */
 
+
+// Before we present the Second View Controller we have to declare it's delegate to be the First View Controller
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EditResultsViewController *editResultsVC = [segue destinationViewController];
+    ResultsViewController *resultsVC = [segue sourceViewController];
+    editResultsVC.delegate = resultsVC;
+    //secondVC.delegate = firstVC;
+}
+
+// This will just update the label text with the message we get from the Second View Controller
+- (void)receiveMessage:(NSString *)message {
+    _responseLabel.text = message;
+}
 
 @end

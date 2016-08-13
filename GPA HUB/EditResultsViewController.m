@@ -13,7 +13,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *color;
 @property (strong, nonatomic) IBOutlet UIPickerView *picker;
 @property (weak, nonatomic) IBOutlet UITextField *subjectName;
-- (IBAction)editFinished:(id)sender;
 @end
 
 @implementation EditResultsViewController
@@ -93,6 +92,13 @@
     resultRow_1.subjectNameObject = self.subjectName.text;
 }
 
+
+// This is the button that closes the modal but first sends the message to its delegate
+- (IBAction)closeAndSend:(id)sender {
+    [self.delegate receiveMessage:_subjectName.text];
+    [self.navigationController popViewControllerAnimated:YES];
+
+}
 
 
 @end
