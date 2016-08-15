@@ -86,10 +86,10 @@
 - (IBAction)editFinished:(id)sender {
     self.color.text = [NSString stringWithFormat:@"%@ %@", self.enteredCreditValue, self.enteredGrade];
     
-    DataResults *resultRow_1 = [[DataResults alloc] init];
-    resultRow_1.creditObject = self.enteredCreditValue;
-    resultRow_1.gradesObject = self.enteredGrade;
-    resultRow_1.subjectNameObject = self.subjectName.text;
+    //DataResults *resultRow_1 = [[DataResults alloc] init];
+    //resultRow_1.creditObject = self.enteredCreditValue;
+    //resultRow_1.gradesObject = self.enteredGrade;
+    //resultRow_1.subjectNameObject = self.subjectName.text;
 }
 
 

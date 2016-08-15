@@ -19,5 +19,6 @@
 @property (nonatomic) NSString *RVCccc;
 @property (nonatomic) NSString *RCVggg;
 @property (nonatomic) NSMutableArray *resultInformation;
+@property (nonatomic) DataResults *singleResultRow;
 
 @end
