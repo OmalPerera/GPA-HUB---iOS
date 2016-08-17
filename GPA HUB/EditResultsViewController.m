@@ -96,6 +96,9 @@
 // This is the button that closes the modal but first sends the message to its delegate
 - (IBAction)closeAndSend:(id)sender {
     [self.delegate receiveMessage:_subjectName.text];
+    //[self.delegate receiveMessage:_enteredGrade];
+    //[self.delegate receiveMessage:_enteredCreditValue];
+    
     [self.navigationController popViewControllerAnimated:YES];
 
 }

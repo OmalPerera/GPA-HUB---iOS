@@ -20,5 +20,6 @@
 @property (nonatomic) NSString *RCVggg;
 @property (nonatomic) NSMutableArray *resultInformation;
 @property (nonatomic) DataResults *singleResultRow;
+@property (weak, nonatomic) IBOutlet UITableView *subjectTableView;
 
 @end

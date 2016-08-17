@@ -87,6 +87,12 @@
 */
 }
 
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.subjectTableView reloadData]; // to reload selected cell
+}
+
 /* ** START : To handle TableView in the Result Input ** */
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     //return 2;
@@ -145,7 +151,7 @@
     _singleResultRow = [[DataResults alloc] init];
     _singleResultRow.creditObject = @"2";
     _singleResultRow.gradesObject = @"A+";
-    _singleResultRow.subjectNameObject = @"System Integration & Architecture";
+    _singleResultRow.subjectNameObject = message;
     [_resultInformation  addObject:_singleResultRow];
 }
 
