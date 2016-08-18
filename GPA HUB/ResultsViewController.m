@@ -7,11 +7,14 @@
 //
 
 #import "ResultsViewController.h"
+#import "EditResultsViewController.h"
 
-@interface ResultsViewController(){
-    
-}
+@interface ResultsViewController()
+
+// This is the label that will receive the text sent from the second view controller
+@property (weak, nonatomic) IBOutlet UILabel *responseLabel;
 @end
+
 
 @implementation ResultsViewController
 
@@ -24,15 +27,22 @@
     [[[self navigationController] navigationBar] setBarStyle:UIBarStyleBlackTranslucent];
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
-    _resultInformation = [[NSMutableArray alloc] init];
     
-    DataResults *resultRow_10 = [[DataResults alloc] init];
     
-    resultRow_10.creditObject = @"3";
-    resultRow_10.gradesObject = @"A";
-    resultRow_10.subjectNameObject = @"Human Computer Interaction";
-    [_resultInformation  addObject:resultRow_10];
+    if (_resultInformation == 0) {
+        _resultInformation = [[NSMutableArray alloc] init];
+        _singleResultRow = [[DataResults alloc] init];
+    }else{
+    }
+
     
+   
+    _singleResultRow.creditObject = @"3";
+    _singleResultRow.gradesObject = @"A";
+    _singleResultRow.subjectNameObject = @"Human Computer Interaction";
+    [_resultInformation  addObject:_singleResultRow];
+    
+     /*
     resultRow_10 = [[DataResults alloc] init];
     resultRow_10.creditObject = @"4";
     resultRow_10.gradesObject = @"A-";
@@ -74,15 +84,18 @@
     resultRow_10.gradesObject = @"A";
     resultRow_10.subjectNameObject = @"Web Technoologies";
     [_resultInformation addObject:resultRow_10];
-    
-    
-    
-    
-    
+*/
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.subjectTableView reloadData]; // to reload selected cell
 }
 
 /* ** START : To handle TableView in the Result Input ** */
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    //return 2;
     return _resultInformation.count;
 }
 
@@ -90,8 +103,8 @@
     static NSString *CellIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
+    
     DataResults *current = [_resultInformation objectAtIndex:indexPath.row];
-    //cell.textLabel.text = [current subjectNameObject];
     NSArray *subviews = cell.contentView.subviews;
     
     for (UIView *subview in subviews) {
@@ -101,6 +114,7 @@
             UILabel *subjectNameLable = (UILabel *)subview;
             //subjectNameLable.textColor = [UIColor colorWithRed:(0.1098039225/1.0) green:(0.2941176593/1.0) blue:(0.666666686500/1.0) alpha:1];
             subjectNameLable.text = [current subjectNameObject];
+            _responseLabel.text = [current subjectNameObject];
             
         }else if(subview.tag == 91) {
             UILabel *creditLable = (UILabel *)subview;
@@ -120,9 +134,25 @@
 -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section{
     return @"Result Input";
 }
-
-
 /* ** END : To handle TableView in the Result Input ** */
 
+
+// Before we present the Second View Controller we have to declare it's delegate to be the First View Controller
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    EditResultsViewController *editResultsVC = [segue destinationViewController];
+    ResultsViewController *resultsVC = [segue sourceViewController];
+    editResultsVC.delegate = resultsVC;
+}
+
+// This will just update the label text with the message we get from the Second View Controller
+- (void)receiveMessage:(NSString *)message {
+    //_responseLabel.text = message;
+    
+    _singleResultRow = [[DataResults alloc] init];
+    _singleResultRow.creditObject = @"2";
+    _singleResultRow.gradesObject = @"A+";
+    _singleResultRow.subjectNameObject = message;
+    [_resultInformation  addObject:_singleResultRow];
+}
 
 @end

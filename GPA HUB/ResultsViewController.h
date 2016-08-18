@@ -9,10 +9,17 @@
 #import <UIKit/UIKit.h>
 #import "DataResults.h"
 
-@interface ResultsViewController : UIViewController <UITableViewDataSource>
+@protocol ResultsViewControllerDelegate <NSObject>
+- (void)receiveMessage:(NSString *)message;
+@end
+
+
+@interface ResultsViewController : UIViewController <UITableViewDataSource, ResultsViewControllerDelegate>
 
 @property (nonatomic) NSString *RVCccc;
 @property (nonatomic) NSString *RCVggg;
 @property (nonatomic) NSMutableArray *resultInformation;
+@property (nonatomic) DataResults *singleResultRow;
+@property (weak, nonatomic) IBOutlet UITableView *subjectTableView;
 
 @end
