@@ -10,7 +10,8 @@
 #import "DataResults.h"
 
 @protocol ResultsViewControllerDelegate <NSObject>
-- (void)receiveMessage:(NSString *)message;
+//- (void)receiveMessage:(NSString *)message;
+- (void)receiveMessage:(NSArray *)message;
 @end
 
 

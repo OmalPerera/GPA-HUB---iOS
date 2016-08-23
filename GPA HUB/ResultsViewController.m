@@ -28,63 +28,17 @@
     self.navigationController.navigationBar.tintColor = [UIColor whiteColor];
     
     
-    
     if (_resultInformation == 0) {
         _resultInformation = [[NSMutableArray alloc] init];
         _singleResultRow = [[DataResults alloc] init];
     }else{
     }
-
     
-   
     _singleResultRow.creditObject = @"3";
     _singleResultRow.gradesObject = @"A";
     _singleResultRow.subjectNameObject = @"Human Computer Interaction";
     [_resultInformation  addObject:_singleResultRow];
     
-     /*
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"4";
-    resultRow_10.gradesObject = @"A-";
-    resultRow_10.subjectNameObject = @"Analysis of Algorithm";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"2";
-    resultRow_10.gradesObject = @"B";
-    resultRow_10.subjectNameObject = @"Advanced Database Systems";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"2";
-    resultRow_10.gradesObject = @"A+";
-    resultRow_10.subjectNameObject = @"System Integration & Architecture";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"3";
-    resultRow_10.gradesObject = @"A";
-    resultRow_10.subjectNameObject = @"IS Risk Management";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"2";
-    resultRow_10.gradesObject = @"A-";
-    resultRow_10.subjectNameObject = @"Business Inteligence";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"2";
-    resultRow_10.gradesObject = @"B+";
-    resultRow_10.subjectNameObject = @"IT Governance";
-    [_resultInformation addObject:resultRow_10];
-    
-    resultRow_10 = [[DataResults alloc] init];
-    resultRow_10.creditObject = @"3";
-    resultRow_10.gradesObject = @"A";
-    resultRow_10.subjectNameObject = @"Web Technoologies";
-    [_resultInformation addObject:resultRow_10];
-*/
 }
 
 
@@ -145,13 +99,13 @@
 }
 
 // This will just update the label text with the message we get from the Second View Controller
-- (void)receiveMessage:(NSString *)message {
+- (void)receiveMessage:(NSArray *)message {
     //_responseLabel.text = message;
     
     _singleResultRow = [[DataResults alloc] init];
-    _singleResultRow.creditObject = @"2";
-    _singleResultRow.gradesObject = @"A+";
-    _singleResultRow.subjectNameObject = message;
+    _singleResultRow.subjectNameObject = message[0];
+    _singleResultRow.creditObject = message[1];
+    _singleResultRow.gradesObject = message[2];
     [_resultInformation  addObject:_singleResultRow];
 }
 

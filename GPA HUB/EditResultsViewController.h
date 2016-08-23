@@ -21,5 +21,7 @@
 @property (strong, nonatomic) NSArray *credits;
 @property (strong, nonatomic) NSArray *grades;
 
+@property (strong, nonatomic) NSArray *data;
+
 
 @end

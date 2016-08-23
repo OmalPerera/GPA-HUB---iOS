@@ -30,6 +30,9 @@
     self.enteredCreditValue = @"0";
     self.enteredGrade = @"E";
     
+    
+    
+    
 }
 
 
@@ -83,21 +86,14 @@
     self.enteredGrade = (NSString *)[self.grades objectAtIndex:gradesRow];
 }
 
-- (IBAction)editFinished:(id)sender {
-    self.color.text = [NSString stringWithFormat:@"%@ %@", self.enteredCreditValue, self.enteredGrade];
-    
-    //DataResults *resultRow_1 = [[DataResults alloc] init];
-    //resultRow_1.creditObject = self.enteredCreditValue;
-    //resultRow_1.gradesObject = self.enteredGrade;
-    //resultRow_1.subjectNameObject = self.subjectName.text;
-}
+
 
 
 // This is the button that closes the modal but first sends the message to its delegate
 - (IBAction)closeAndSend:(id)sender {
-    [self.delegate receiveMessage:_subjectName.text];
-    //[self.delegate receiveMessage:_enteredGrade];
-    //[self.delegate receiveMessage:_enteredCreditValue];
+    //[self.delegate receiveMessage:_subjectName.text];
+    self.data = @[_subjectName.text, _enteredCreditValue, _enteredGrade];
+    [self.delegate receiveMessage:self.data];
     
     [self.navigationController popViewControllerAnimated:YES];
 
