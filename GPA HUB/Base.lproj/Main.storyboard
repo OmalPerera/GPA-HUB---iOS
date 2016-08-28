@@ -244,7 +244,7 @@
                                     <barButtonItem image="calculate" width="40" id="Df9-Ac-Bvo">
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <connections>
-                                            <segue destination="G2b-Qh-ViF" kind="push" id="eow-Da-d6o"/>
+                                            <segue destination="G2b-Qh-ViF" kind="push" id="PSz-Nd-cjX"/>
                                         </connections>
                                     </barButtonItem>
                                 </items>
